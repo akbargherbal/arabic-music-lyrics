@@ -7,6 +7,19 @@ filters them down to **Arabic-only lyrics**.
 
 Published dataset: [akbargherbal/arabic-music-lyrics](https://huggingface.co/datasets/akbargherbal/arabic-music-lyrics)
 
+## Statistics
+
+Full summary and top-50 artist table: **[STATS.md](STATS.md)**
+
+Machine-readable per-artist counts:
+
+- [`data/processed/artist_stats.csv`](data/processed/artist_stats.csv) — as stored (2,771 artist strings)
+- [`data/processed/artist_stats_merged.csv`](data/processed/artist_stats_merged.csv) — `Name - Arabic alias` merged (2,736 artists)
+
+Top of the distribution: Amr Diab (375 tracks), Abyusif (219), The Synaptik (146),
+Wegz (119), Marwan Pablo (108). The corpus is long-tailed: 57% of artists have
+exactly one track, and the top 10 artists account for 10.4% of tracks.
+
 ## Sources
 
 | Source | Tracks | Origin | Notes |
@@ -42,11 +55,15 @@ scripts/
   filter_genius_duckdb.py    # 9 GB Genius CSV -> Arabic parquet (DuckDB)
   filter_spotify_arabic.py   # Spotify dumps -> Arabic-script parquet
   merge_corpus.py            # normalize + clean + dedupe all sources
+  artist_stats.py            # per-artist track/character counts
   upload_hf.py               # publish to the Hugging Face Hub
 data/processed/
   arabic_lyrics.parquet      # final corpus (21 columns)
   arabic_lyrics_stats.json
   arabic_lyrics_sample.csv   # first 200 rows
+  artist_stats.csv           # per-artist counts, as stored
+  artist_stats_merged.csv    # per-artist counts, alias-merged
+STATS.md                     # human-readable statistics
 ```
 
 ## Reproduce
