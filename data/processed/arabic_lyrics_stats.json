@@ -1,0 +1,79 @@
+{
+  "tracks": 12463,
+  "by_source": {
+    "genius": 10396,
+    "spotify_960k": 1021,
+    "arabic_hiphop": 589,
+    "egyptian_songs": 280,
+    "moroccan_lyrics": 177
+  },
+  "by_script": {
+    "arabic": 11964,
+    "mixed": 388,
+    "latin/arabizi": 111
+  },
+  "by_dialect": {
+    "null": 12006,
+    "egyptian": 280,
+    "moroccan_darija": 177
+  },
+  "artists": 2771,
+  "with_translation": 280,
+  "chars": {
+    "total": 18540195,
+    "median": 1335,
+    "p90": 2493
+  },
+  "year_range": [
+    1921,
+    2023
+  ],
+  "top_genres": {
+    "rap": 7830,
+    "pop": 2250,
+    "rock": 331,
+    "misc": 269,
+    "rb": 249,
+    "romance": 115,
+    "general": 97,
+    "country": 56,
+    "social": 22,
+    "hope": 14
+  },
+  "top_artists": {
+    "Amr Diab": 375,
+    "Abyusif": 218,
+    "FADA VEX": 104,
+    "Lotfi Double Kanon": 99,
+    "Marwan Moussa": 82,
+    "Balti": 78,
+    "Cairokee": 78,
+    "The Synaptik - السينابتيك": 76,
+    "El Joker": 74,
+    "Nancy Ajram": 70,
+    "Elissa": 70,
+    "The Synaptik": 70,
+    "DAM": 69,
+    "Marwan Pablo - مروان بابلو": 69,
+    "Muslim": 66,
+    "Wegz - ويجز": 63,
+    "Redstar Radi": 60,
+    "Tamer Hosny": 59,
+    "Wegz": 56,
+    "Bu Kolthoum": 55
+  },
+  "deduped_rows": 334,
+  "genius_cleaning": {
+    "non_music": 626,
+    "other_language": 40
+  },
+  "spotify_language_detection": {
+    "language": {
+      "ar": 1047,
+      "fa": 954,
+      "ur": 321,
+      "err": 1
+    },
+    "dropped_non_arabic": 1276
+  }
+}

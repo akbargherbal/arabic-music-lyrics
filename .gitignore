@@ -1,0 +1,14 @@
+# Raw Kaggle/HF downloads (re-downloadable)
+data/raw/*
+!data/raw/.gitkeep
+
+# Intermediate filter outputs (only the merged corpus is versioned)
+data/processed/genius_arabic.parquet
+data/processed/spotify960k_arabic.parquet
+data/processed/upload/
+data/processed/*.log
+
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
